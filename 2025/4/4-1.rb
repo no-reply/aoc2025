@@ -3,7 +3,7 @@
 rolls = []
 
 File.readlines("4.input").each_with_index do |line,y|
-  rolls[y] = []
+  rolls << []
   line.chars.each_with_index do |sym,x|
     rolls[y] << x if sym == '@'
   end
